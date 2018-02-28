@@ -1,0 +1,1875 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1370
+y 87
+w 500
+h 600
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 439
+w 83
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select F"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 435
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSELF_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 433
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSELF_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSELF_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 439
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELF_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 439
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELF_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 415
+w 83
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select E"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 411
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSELE_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 409
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSELE_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSELE_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 415
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELE_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 415
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELE_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 393
+w 84
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select D"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 389
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSELD_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 387
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSELD_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSELD_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 393
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELD_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 393
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELD_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 369
+w 84
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select C"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 365
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSELC_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 363
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSELC_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSELC_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 369
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELC_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 369
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELC_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 333
+w 83
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select B"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 329
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSELB_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 327
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSELB_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSELB_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 333
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELB_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 333
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELB_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 309
+w 84
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select A"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 305
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSELA_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 303
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSELA_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSELA_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 309
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELA_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 309
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSELA_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 287
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 9"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 283
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL9_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 281
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL9_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL9_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 287
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL9_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 287
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL9_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 263
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 8"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 259
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL8_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 257
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL8_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL8_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 263
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL8_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 263
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL8_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 221
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 7"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 217
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL7_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 215
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL7_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL7_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 221
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL7_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 221
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL7_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 197
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 6"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 193
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL6_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 191
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL6_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL6_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 197
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL6_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 197
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL6_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 175
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 5"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 171
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL5_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 169
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL5_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL5_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 175
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL5_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 175
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL5_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 151
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 4"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 147
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL4_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 145
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL4_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL4_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 151
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL4_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 151
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL4_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 113
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 3"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 109
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL3_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 107
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL3_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL3_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 113
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL3_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 113
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL3_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 89
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 2"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 85
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL2_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 83
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL2_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL2_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 89
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL2_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 89
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL2_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 67
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 1"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 63
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL1_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 61
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL1_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL1_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 67
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL1_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 67
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL1_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 43
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Select 0"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 109
+y 39
+w 80
+h 18
+controlPv "$(DEVICE):SOFTEVSEL0_EVENTCODE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 4
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 0
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 198
+y 37
+w 50
+h 20
+fgColor index 14
+onColor index 41
+offColor index 4
+inconsistentColor index 14
+topShadowColor index 2
+botShadowColor index 14
+controlPv "$(DEVICE):SOFTEVSEL0_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL0_ENABLE"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 253
+y 43
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL0_RATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 340
+y 43
+w 80
+h 14
+controlPv "$(DEVICE):SOFTEVSEL0_EVRATE"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 4
+autoHeight
+nullColor index 0
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 114
+y 18
+w 66
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Event Code"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 250
+y 19
+w 82
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Rate in Pattern"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 336
+y 19
+w 90
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Generating Rate"
+}
+autoSize
+endObjectProperties
+

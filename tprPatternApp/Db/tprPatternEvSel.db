@@ -1,0 +1,37 @@
+record(longout, "$(DEVICE):SOFTEVSEL$(NN)_EVENTCODE")
+{
+    field(DESC, "Soft Event Select $(N) Event Code")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) softEventSelect$(N)_eventCode")
+    field(SCAN, "Passive") 
+}
+
+record(bo, "$(DEVICE):SOFTEVSEL$(NN)_ENABLE")
+{
+    field(DESC, "Soft Event Select $(N) Enable")
+    field(DTYP, "asynInt32")
+    field(OUT,  "@asyn($(PORT),0) softEventSelect$(N)_enable")
+    field(OMSL, "supervisory")
+    field(ZNAM, "Disable")
+    field(ONAM, "Enable")
+}
+
+record(ai, "$(DEVICE):SOFTEVSEL$(NN)_RATE")
+{
+    field(DESC, "Soft Event Select $(N) Rate in Pattern")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),0) softEventSelect$(N)_rate")
+    field(SCAN, "I/O Intr")
+    field(PREC, "1")
+    field(EGU,  "Counts/Sec")
+}
+
+record(ai, "$(DEVICE):SOFTEVSEL$(NN)_EVRATE")
+{
+    field(DESC, "Soft Event Select $(N) Event Rate")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),0) softEventSelect$(N)_evRate")
+    field(SCAN, "I/O Intr")
+    field(PREC, "1")
+    field(EGU,  "Counts/Sec")
+}

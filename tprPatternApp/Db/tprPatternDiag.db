@@ -1,0 +1,148 @@
+record(longin, "$(DEVICE):PATTERN$(D)_PULSEID")
+{
+    field(DESC, "PatternDiag $(D) Pulse ID")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_pulseId")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_BEAMCODE")
+{
+    field(DESC, "PatternDiag $(D) Beam Code")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_beamCode")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_TIMESLOT")
+{
+    field(DESC, "PatternDiag $(D) Timeslot")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_timeslot")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_SECOND")
+{
+    field(DESC, "PatternDiag $(D) Second")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_second")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_NANOSECOND")
+{
+    field(DESC, "PatternDiag $(D) nanoSecond")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_nanoSecond")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER1")
+{
+    field(DESC, "PatternDiag $(D) modifier1")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_modifier1")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER2")
+{
+    field(DESC, "PatternDiag $(D) modifier2")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_modifier2")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER3")
+{
+    field(DESC, "PatternDiag $(D) modifier3")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_modifier3")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER4")
+{
+    field(DESC, "PatternDiag $(D) modifier4")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_modifier4")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER5")
+{
+    field(DESC, "PatternDiag $(D) modifier5")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_modifier5")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER6")
+{
+    field(DESC, "PatternDiag $(D) modifier6")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_modifier6")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_EDEFAVGDONE")
+{
+    field(DESC, "PatternDiag $(D) EDEF AVG Done")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_edefAvgDone")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_EDEFMINOR")
+{
+    field(DESC, "PatternDiag $(D) EDEF Minor")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_edefMinor")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_EDEFMAJOR")
+{
+    field(DESC, "PatternDiag $(D) EDEF Major")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_edefMajor")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_EDEFINIT")
+{
+    field(DESC, "PatternDiag $(D) EDEF Init")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_edefInit")
+    field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(DEVICE):PATTERN$(D)_EDEFACTIVE")
+{
+    field(DESC, "PatternDiag $(D) EDEF Active")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_edefActive")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(longin, "$(DEVICE):PATTTERN$(D)_EDEFALLDONE")
+{
+    field(DESC, "PatternDiag $(D) EDEF All Done")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_edefAllDone")
+    field(SCAN, "I/O Intr")
+}
+
+
+record(longin, "$(DEVICE):PATTERN$(D)_STATUS")
+{
+    field(DESC, "PatternDiag $(D) Status")
+    field(DTYP, "asynInt32")
+    field(INP,  "@asyn($(PORT),0) patternDiag$(I)_status")
+    field(SCAN, "I/O Intr")
+}
+
+
+
