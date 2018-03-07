@@ -393,7 +393,10 @@ void PatternBuffer::EdefProcessing(Tpr::TprStream *buf_advanced, Tpr::TprStream 
 
 void PatternBuffer::BsaTimingProcessing(Tpr::TprStream * buf_current)
 {
-    if(!buf_current) return ;
+    if(!buf_current) {
+        pLastBsaBuf = NULL;
+        return ;
+    }
     
     BsaTimingData *bsa_current = bsaTimingBuf + index;
     
@@ -412,7 +415,7 @@ void PatternBuffer::BsaTimingProcessing(Tpr::TprStream * buf_current)
 
 int PatternBuffer::BsaCallbackProcessing(void)
 {
-    if(pBsaCallback) return pBsaCallback->CallFunctions(pLastBsaBuf);
+    if(pBsaCallback && pLastBsaBuf) return pBsaCallback->CallFunctions(pLastBsaBuf);
     
     return -1;
 }

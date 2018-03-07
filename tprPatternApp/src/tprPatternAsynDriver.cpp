@@ -107,12 +107,14 @@ int tprPatternAsynDriver::tprPatternTask(void)
         
             p_patternBuffer->ActiveTimeslotProcessing(buf_current);
             p_patternBuffer->EdefProcessing(buf2_advanced, buf_current);
-            if(p_patternBuffer->IsActiveTimeslot(buf_current)) p_patternBuffer->BsaTimingProcessing(buf_current);
+            // if(p_patternBuffer->IsActiveTimeslot(buf_current)) p_patternBuffer->BsaTimingProcessing(buf_current);  /* bsa processing only for active timeslot 120Hz */
+            p_patternBuffer->BsaTimingProcessing(buf2_advanced);  /*360Hz bsa processing with advanced timint pattern */
         
         p_patternBuffer->Unlock();  /* unlock the global locking */
         
         p_patternBuffer->FiducialCallbackProcessing();
-        if(p_patternBuffer->IsActiveTimeslot(buf_current)) p_patternBuffer->BsaCallbackProcessing(); 
+        // if(p_patternBuffer->IsActiveTimeslot(buf_current)) p_patternBuffer->BsaCallbackProcessing();  /* bsa processing only for active timeslot 120Hz */
+        p_patternBuffer->BsaCallbackProcessing();  /* 360Hz bsa processing with advanced timing pattern */
         p_patternBuffer->EventProcessing(buf2_advanced, buf_current);
         
         TprDiagnostics();
