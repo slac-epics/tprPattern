@@ -5,8 +5,6 @@
 #include <epicsTime.h>
 #include <sys/time.h>
 
-#include "tprPatternYaml.hh"
-#include "tprEvent.hh"
 
 #include <bsaCallbackApi.h>
 #include <evrTime.h>
