@@ -25,7 +25,6 @@ LIBRARY_IOC = tprPattern
 
 tprPattern_DBD  += tprPatternAsynDriver.dbd
 tprPattern_SRCS += tprPatternAsynDriver.cpp
-tprPattern_SRCS += tprPatternYaml.cc
 tprPattern_SRCS += tprEvent.cc
 
 boost_DIR = $(BOOST_LIB)
