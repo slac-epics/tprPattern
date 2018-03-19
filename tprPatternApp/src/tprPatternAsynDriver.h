@@ -12,7 +12,9 @@
 
 #define MAX_NUM_TRIGGER   16
 
-
+// we may not need the following structure!
+// we are going to remove it!
+/* 
 #pragma pack (push)
 #pragma pack (1)
 
@@ -35,7 +37,8 @@ typedef struct {
 #define SIZE_LCLS1_PATTERN_STREAM  sizeof(tstream_LCLS1_pattern_t)
 
 
-#pragma pack (back)
+#pragma pack (pop)
+*/
 
 
 class tprPatternAsynDriver:asynPortDriver {
