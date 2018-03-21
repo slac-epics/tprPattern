@@ -25,7 +25,7 @@
 
 ASYN_MODULE_VERSION=R4.31-0.1.0
 YAMLLOADER_MODULE_VERSION=R1.0.3
-TIMINGAPI_MODULE_VERSION=timingApi-git
+TIMINGAPI_MODULE_VERSION=R0.6
 
 
 # ==========================================================
