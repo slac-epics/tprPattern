@@ -297,7 +297,7 @@ uint32_t PatternBuffer::IsActiveTimeslot(Tpr::TprStream *buf)
     
     uint32_t ts = GetTimeslot(buf);
     
-    return (ts1 == ts || ts2 == ts)? one: zero; 
+    return ((uint32_t) ts1 == ts || (uint32_t)ts2 == ts)? one: zero; 
 }
 
 
@@ -322,7 +322,7 @@ void PatternBuffer::ActiveTimeslotProcessing(Tpr::TprStream *buf)
     if(p->enable) p->ev_count ++;
     
     
-    if(ts1 == ts || ts2 == ts) {
+    if((uint32_t) ts1 == ts || (uint32_t) ts2 == ts) {
         lastActiveBuf = buf;
         p = event_tbl + ACTIVE_TS;
         p->time = *p_time;

@@ -90,7 +90,7 @@ int tprPatternAsynDriver::Report(int interest_level)
 
 int tprPatternAsynDriver::tprPatternTask(void)
 {
-    printf("tprPatternAsynDriver: launch tprPatternTask (%d)\n", TPR_STREAM_SIZE);
+    printf("tprPatternAsynDriver: launch tprPatternTask (%ld)\n", TPR_STREAM_SIZE);
     Tpr::TprStream *buf_current, *buf2_advanced;
     
     p_drv->TrainingStream();
@@ -453,6 +453,8 @@ static int tprPatternTask(void)
     if(!p_asynDrv) return -1;
     
     p_asynDrv->tprPatternTask();
+
+    return 0;
 }
 
 
