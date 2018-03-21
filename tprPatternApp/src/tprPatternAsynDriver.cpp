@@ -315,6 +315,13 @@ int RegisterBsaTimingCallback(BsaTimingCallback callback, void *pUserPvt)
     return p_asynDrv->BsaCallbackRegister(callback, pUserPvt);
 }
 
+//
+//   dummy initialization
+//
+int  evrInitialize(void)
+{
+	return 0;
+}
 
 
 //
