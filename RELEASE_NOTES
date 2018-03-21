@@ -1,0 +1,21 @@
+R1.0.0    March 21, 2018    Kukhee Kim (KHKIM)
+
+          use yamlLoader R1.1.0
+          Use cpsw framework R3.6.3
+          Remove un-ncessary structure and byte packing directive
+
+
+          merge with Till's ts_fixes branch
+
+          Bumped yamlLoader to R1.1.0-BR-ts
+          new-style EPICS_BASE definition; -include ../../RELEASE_SITE
+          Bumped timingApi to R0.6
+          Removed RELEASE_SITE from git
+          Remove RELEASE_SITE from git
+          Added dummy evrInitialize (evrTime API)
+          Makefile: replaced -I$(VAR) by $(addprefix -I,$(VAR))
+          ... this expands to an empty string if VAR is empty (the original version to '-I'
+          which can be harmful)
+
+
+March 7, 2018  Prepare Initial Release
