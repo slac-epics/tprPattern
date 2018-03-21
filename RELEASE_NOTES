@@ -1,6 +1,7 @@
 R1.0.0    March 21, 2018    Kukhee Kim (KHKIM)
 
           use yamlLoader R1.1.0
+          use hpsTpr R1.0.0
           Use cpsw framework R3.6.3
           Remove un-ncessary structure and byte packing directive
 
