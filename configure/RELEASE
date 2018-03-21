@@ -5,6 +5,7 @@
 #       BASE_MODULE_VERSION
 #       EPICS_MODULES
 # from one of the following options
+-include $(TOP)/../../RELEASE_SITE
 -include $(TOP)/RELEASE_SITE
 
 
@@ -43,7 +44,7 @@ TIMINGAPI=$(EPICS_MODULES)/timingApi/$(TIMINGAPI_MODULE_VERSION)
 # =====================================================================
 # Set EPICS_BASE last so it appears last in the DB, DBD, INCLUDE, and LIB search paths
 # ====================================================================
-EPICS_BASE=$(BASE_SITE_TOP)/$(BASE_MODULE_VERSION)
+EPICS_BASE=$(EPICS_SITE_TOP)/base/$(BASE_MODULE_VERSION)
 
 # Location of Linux Kernel Modules:
 LINUX_KERNEL_MODULES=$(PACKAGE_SITE_TOP)/linuxKernel_Modules
