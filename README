@@ -1,0 +1,111 @@
+----------
+tprPattern
+----------
+
+The tprPattern is an epics module which provides a standard PV interface
+to set up soft event and monitoring timing pattern status for LCLS1.
+This module works with TimingCore firmware, and it also provides 
+evnet module compatible API and functions for TimingApi.
+
+Note) it is an early day version of tprPattern, we provide event module compatible API,
+and part of TimingApi whihc is BSA callback registration function.
+All other functions in TimingApi will be implemented soon.
+
+How to build an ioc with tprPattern module
+------------------------------------------
+
+1. The tprPattern requires hpsTpr API layer.
+configure/CONFIG_SITE should have the followings for the hpsTpr API.
+
+HPSTPR_PACKAGE_NAME=timing/hpsTpr
+HPSTPR_VERSION=R1.1.0
+HPSTPR_ARCH=$(LINUXRT_BUILDROOT_VERSION)-x86_64
+HPSTPR=$(PACKAGE_AREA)/$(HPSTPR_PACKAGE_NAME)/$(HPSTPR_VERSION)/$(HPSTPR_ARCH)
+HPSTPR_LIB     = $(HPSTPR)/lib
+HPSTPR_INCLUDE = $(HPSTPR)/include
+
+(The version number should be replaced with a proper version for your ioc.)
+
+
+2. tprPattern module
+configure/RELEASE should have the followings for tprPattern module.
+
+TPRPATTERN_MODULE_VERSION=R1.0.0
+TPRPATTERN=$(EPICS_MODULES)/tprPattern/$(TPRPATTERN_MODULE_VERSION)
+
+
+3. Other module and API
+the tprTrigger module assumes the following API and modules are included in the application.
+
+asyn            R4.31-0.1.0
+yamlLoader      R1.1.0
+timingApi       R0.6
+
+cpsw/framework  R3.6.4
+yaml-cpp        yaml-cpp-0.5.3
+boost           1.63.0
+hpsTpr          R1.0.0
+
+
+
+4. How to build application binary
+
+The Makefile in source directory should include the followings:
+
+# DBD file for tprPattern
+<your_application>_DBD += tprPatternAsynDriver.dbd
+
+# Libarary for tprPattern
+<your_application>_LIBS += tprPattern
+
+# API for tprPattern
+hpsTpr_DIR = $(HPSTPR_LIB)
+<your_application>_LIBS += hpsTpr
+
+
+The Makefile in Db directory need to install database template for tprPattern
+as the followings:
+
+# Install Database for tprPattern module
+DB_INSTALLS += $(TPRPATTERN)/db/tprPattern.db
+
+ 
+How to run ioc with tprPattern
+-------------------------------
+
+1. How to load database template for tprPattern
+the template has two macros: DEV and PORT.
+DEV - prefix for PV name (ex, TPR:SYS2:0)
+PORT - port name for asyn port driver, tprPattern module has port name "pattern".
+
+Here is an example to load up the template.
+epicsEnvSet("IOC_PV", "TPR:SYS2:0")
+dbLoadRecords("db/tprPattern.db", "DEV=${IOC_PV}, PORT=pattern")
+
+
+2. How to initialize the driver
+The tprPattern assums yamlLoader driver already loaded up the register hierarchy as the followings:
+
+cpswLoadYamlFile("000TopLevel.yaml", "NetIODev", "", "10.0.3.105")
+
+(The yaml file path, register path and IP address can be different for specific application.) 
+
+After loading the hierarchy, we can configure tprPattern driver with the following commands.
+
+tprPatternAsynDriverConfigure(<asyn port name>, <path for AmcCarrierCore>, <path for timing stream>)
+
+Hers is a typical example.
+tprPatternAsynDriverConfigure("pattern", "mmio/AmcCarrierEmpty/AmcCarrierCore", "tstream")
+
+
+3. Timing Stream
+
+The tprPattern assumes, it receives LCLS1 timing pattern from UDP port 8197 in firmware side.
+The UDP port should be described in yaml file.
+The firmware assumes, it receives beacon packet periodically (less than 3 second interval) from software.
+If firmware doesn't receive the packet, firmware stops to send stream, clean up destination information 
+and wait request from another destination.
+Thus, we need to pu "pollSec: 1" for the stream definiation in the yaml file.
+
+
+
