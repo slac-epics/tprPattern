@@ -1,3 +1,9 @@
+R1.0.1    April 13, 2018    Kukhee Kim (KHKIM)
+          force tag!!
+          update README
+          cleanup pattern diagnostics screen
+          update pattern satstus PVs with 0 - need to implement status soon 
+
 R1.0.0    March 21, 2018    Kukhee Kim (KHKIM)
 
           use yamlLoader R1.1.0
