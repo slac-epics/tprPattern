@@ -107,5 +107,3 @@ If firmware doesn't receive the packet, firmware stops to send stream, clean up 
 and wait request from another destination.
 Thus, we need to pu "pollSec: 1" for the stream definiation in the yaml file.
 
-
-
