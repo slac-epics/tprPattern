@@ -232,6 +232,7 @@ void tprPatternAsynDriver::UpdateDiagPVs(Tpr::TprStream **buf)
         setIntegerParam((p_patternDiag +i)->edef_init,     p_patternBuffer->GetEdefInit(buf[i]));
         setIntegerParam((p_patternDiag +i)->edef_active,   p_patternBuffer->GetEdefActive(buf[i]));
         setIntegerParam((p_patternDiag +i)->edef_all_done, p_patternBuffer->GetEdefAllDone(buf[i]));
+        setIntegerParam((p_patternDiag +i)->status, 0); // need to add status in future
     }
     
     for(int i =0; i < MAX_NUM_TRIGGER; i++) {
