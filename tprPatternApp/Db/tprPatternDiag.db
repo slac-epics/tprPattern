@@ -127,7 +127,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_EDEFACTIVE")
 }
 
 
-record(longin, "$(DEVICE):PATTTERN$(D)_EDEFALLDONE")
+record(longin, "$(DEVICE):PATTERN$(D)_EDEFALLDONE")
 {
     field(DESC, "PatternDiag $(D) EDEF All Done")
     field(DTYP, "asynInt32")
