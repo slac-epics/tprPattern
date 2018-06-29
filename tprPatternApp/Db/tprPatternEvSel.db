@@ -12,8 +12,8 @@ record(bo, "$(DEVICE):SOFTEVSEL$(NN)_ENABLE")
     field(DTYP, "asynInt32")
     field(OUT,  "@asyn($(PORT),0) softEventSelect$(N)_enable")
     field(OMSL, "supervisory")
-    field(ZNAM, "Disable")
-    field(ONAM, "Enable")
+    field(ZNAM, "Disabled")
+    field(ONAM, "Enabled")
 }
 
 record(ai, "$(DEVICE):SOFTEVSEL$(NN)_RATE")
