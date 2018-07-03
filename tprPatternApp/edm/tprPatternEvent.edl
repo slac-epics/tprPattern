@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 1370
-y 87
+x 522
+y 78
 w 500
 h 600
 font "helvetica-medium-r-18.0"
@@ -29,14 +29,14 @@ minor 1
 release 1
 x 20
 y 439
-w 83
+w 89
 h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Event Select F"
+  "Event Select 15"
 }
 autoSize
 endObjectProperties
@@ -51,7 +51,7 @@ x 109
 y 435
 w 80
 h 18
-controlPv "$(DEVICE):SOFTEVSELF_EVENTCODE"
+controlPv "$(DEVICE):SOFTEVSEL15_EVENTCODE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fgColor index 14
@@ -82,8 +82,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 2
 botShadowColor index 14
-controlPv "$(DEVICE):SOFTEVSELF_ENABLE"
-indicatorPv "$(DEVICE):SOFTEVSELF_ENABLE"
+controlPv "$(DEVICE):SOFTEVSEL15_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL15_ENABLE"
 3d
 font "helvetica-medium-r-12.0"
 objType "controls"
@@ -99,7 +99,7 @@ x 253
 y 439
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELF_RATE"
+controlPv "$(DEVICE):SOFTEVSEL15_RATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -121,7 +121,7 @@ x 340
 y 439
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELF_EVRATE"
+controlPv "$(DEVICE):SOFTEVSEL15_EVRATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -141,14 +141,14 @@ minor 1
 release 1
 x 20
 y 415
-w 83
+w 89
 h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Event Select E"
+  "Event Select 14"
 }
 autoSize
 endObjectProperties
@@ -163,7 +163,7 @@ x 109
 y 411
 w 80
 h 18
-controlPv "$(DEVICE):SOFTEVSELE_EVENTCODE"
+controlPv "$(DEVICE):SOFTEVSEL14_EVENTCODE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fgColor index 14
@@ -194,8 +194,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 2
 botShadowColor index 14
-controlPv "$(DEVICE):SOFTEVSELE_ENABLE"
-indicatorPv "$(DEVICE):SOFTEVSELE_ENABLE"
+controlPv "$(DEVICE):SOFTEVSEL14_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL14_ENABLE"
 3d
 font "helvetica-medium-r-12.0"
 objType "controls"
@@ -211,7 +211,7 @@ x 253
 y 415
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELE_RATE"
+controlPv "$(DEVICE):SOFTEVSEL14_RATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -233,7 +233,7 @@ x 340
 y 415
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELE_EVRATE"
+controlPv "$(DEVICE):SOFTEVSEL14_EVRATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -253,14 +253,14 @@ minor 1
 release 1
 x 20
 y 393
-w 84
+w 89
 h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Event Select D"
+  "Event Select 13"
 }
 autoSize
 endObjectProperties
@@ -275,7 +275,7 @@ x 109
 y 389
 w 80
 h 18
-controlPv "$(DEVICE):SOFTEVSELD_EVENTCODE"
+controlPv "$(DEVICE):SOFTEVSEL13_EVENTCODE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fgColor index 14
@@ -306,8 +306,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 2
 botShadowColor index 14
-controlPv "$(DEVICE):SOFTEVSELD_ENABLE"
-indicatorPv "$(DEVICE):SOFTEVSELD_ENABLE"
+controlPv "$(DEVICE):SOFTEVSEL13_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL13_ENABLE"
 3d
 font "helvetica-medium-r-12.0"
 objType "controls"
@@ -323,7 +323,7 @@ x 253
 y 393
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELD_RATE"
+controlPv "$(DEVICE):SOFTEVSEL13_RATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -345,7 +345,7 @@ x 340
 y 393
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELD_EVRATE"
+controlPv "$(DEVICE):SOFTEVSEL13_EVRATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -365,14 +365,14 @@ minor 1
 release 1
 x 20
 y 369
-w 84
+w 89
 h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Event Select C"
+  "Event Select 12"
 }
 autoSize
 endObjectProperties
@@ -387,7 +387,7 @@ x 109
 y 365
 w 80
 h 18
-controlPv "$(DEVICE):SOFTEVSELC_EVENTCODE"
+controlPv "$(DEVICE):SOFTEVSEL12_EVENTCODE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fgColor index 14
@@ -418,8 +418,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 2
 botShadowColor index 14
-controlPv "$(DEVICE):SOFTEVSELC_ENABLE"
-indicatorPv "$(DEVICE):SOFTEVSELC_ENABLE"
+controlPv "$(DEVICE):SOFTEVSEL12_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL12_ENABLE"
 3d
 font "helvetica-medium-r-12.0"
 objType "controls"
@@ -435,7 +435,7 @@ x 253
 y 369
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELC_RATE"
+controlPv "$(DEVICE):SOFTEVSEL12_RATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -457,7 +457,7 @@ x 340
 y 369
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELC_EVRATE"
+controlPv "$(DEVICE):SOFTEVSEL12_EVRATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -477,14 +477,14 @@ minor 1
 release 1
 x 20
 y 333
-w 83
+w 89
 h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Event Select B"
+  "Event Select 11"
 }
 autoSize
 endObjectProperties
@@ -499,7 +499,7 @@ x 109
 y 329
 w 80
 h 18
-controlPv "$(DEVICE):SOFTEVSELB_EVENTCODE"
+controlPv "$(DEVICE):SOFTEVSEL11_EVENTCODE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fgColor index 14
@@ -530,8 +530,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 2
 botShadowColor index 14
-controlPv "$(DEVICE):SOFTEVSELB_ENABLE"
-indicatorPv "$(DEVICE):SOFTEVSELB_ENABLE"
+controlPv "$(DEVICE):SOFTEVSEL11_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL11_ENABLE"
 3d
 font "helvetica-medium-r-12.0"
 objType "controls"
@@ -547,7 +547,7 @@ x 253
 y 333
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELB_RATE"
+controlPv "$(DEVICE):SOFTEVSEL11_RATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -569,7 +569,7 @@ x 340
 y 333
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELB_EVRATE"
+controlPv "$(DEVICE):SOFTEVSEL11_EVRATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -589,14 +589,14 @@ minor 1
 release 1
 x 20
 y 309
-w 84
+w 89
 h 14
 font "helvetica-medium-r-12.0"
 fgColor index 14
 bgColor index 0
 useDisplayBg
 value {
-  "Event Select A"
+  "Event Select 10"
 }
 autoSize
 endObjectProperties
@@ -611,7 +611,7 @@ x 109
 y 305
 w 80
 h 18
-controlPv "$(DEVICE):SOFTEVSELA_EVENTCODE"
+controlPv "$(DEVICE):SOFTEVSEL10_EVENTCODE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fgColor index 14
@@ -642,8 +642,8 @@ offColor index 4
 inconsistentColor index 14
 topShadowColor index 2
 botShadowColor index 14
-controlPv "$(DEVICE):SOFTEVSELA_ENABLE"
-indicatorPv "$(DEVICE):SOFTEVSELA_ENABLE"
+controlPv "$(DEVICE):SOFTEVSEL10_ENABLE"
+indicatorPv "$(DEVICE):SOFTEVSEL10_ENABLE"
 3d
 font "helvetica-medium-r-12.0"
 objType "controls"
@@ -659,7 +659,7 @@ x 253
 y 309
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELA_RATE"
+controlPv "$(DEVICE):SOFTEVSEL10_RATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
@@ -681,7 +681,7 @@ x 340
 y 309
 w 80
 h 14
-controlPv "$(DEVICE):SOFTEVSELA_EVRATE"
+controlPv "$(DEVICE):SOFTEVSEL10_EVRATE"
 format "decimal"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
