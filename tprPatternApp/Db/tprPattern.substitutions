@@ -1,9 +1,9 @@
 file "tprPatternDiag.db" {
     pattern {   DEVICE,      PORT,        D,       I   }
-            { "$(DEV)", "$(PORT)",    "D-3",      "0"  }
-            { "$(DEV)", "$(PORT)",    "D-2",      "1"  }
-            { "$(DEV)", "$(PORT)",    "D-1",      "2"  }
-            { "$(DEV)", "$(PORT)",    "D"  ,      "3"  }
+            { "$(DEV)", "$(PORT)",    "D3",      "0"  }
+            { "$(DEV)", "$(PORT)",    "D2",      "1"  }
+            { "$(DEV)", "$(PORT)",    "D1",      "2"  }
+            { "$(DEV)", "$(PORT)",    "D" ,      "3"  }
 }
 
 
