@@ -1,4 +1,4 @@
-record(longin, "$(DEVICE):PATTERN$(D)_PULSEID")
+record(longin, "$(DEVICE):PATT$(D)_PULSEID")
 {
     field(DESC, "PatternDiag $(D) Pulse ID")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_PULSEID")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_BEAMCODE")
+record(longin, "$(DEVICE):PATT$(D)_BEAMCODE")
 {
     field(DESC, "PatternDiag $(D) Beam Code")
     field(DTYP, "asynInt32")
@@ -14,7 +14,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_BEAMCODE")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_TIMESLOT")
+record(longin, "$(DEVICE):PATT$(D)_TIMESLOT")
 {
     field(DESC, "PatternDiag $(D) Timeslot")
     field(DTYP, "asynInt32")
@@ -22,7 +22,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_TIMESLOT")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_SECOND")
+record(longin, "$(DEVICE):PATT$(D)_SECOND")
 {
     field(DESC, "PatternDiag $(D) Second")
     field(DTYP, "asynInt32")
@@ -30,7 +30,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_SECOND")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_NANOSECOND")
+record(longin, "$(DEVICE):PATT$(D)_NANOSECOND")
 {
     field(DESC, "PatternDiag $(D) nanoSecond")
     field(DTYP, "asynInt32")
@@ -38,7 +38,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_NANOSECOND")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER1")
+record(longin, "$(DEVICE):PATT$(D)_MODIFIER1")
 {
     field(DESC, "PatternDiag $(D) modifier1")
     field(DTYP, "asynInt32")
@@ -46,7 +46,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER1")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER2")
+record(longin, "$(DEVICE):PATT$(D)_MODIFIER2")
 {
     field(DESC, "PatternDiag $(D) modifier2")
     field(DTYP, "asynInt32")
@@ -54,7 +54,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER2")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER3")
+record(longin, "$(DEVICE):PATT$(D)_MODIFIER3")
 {
     field(DESC, "PatternDiag $(D) modifier3")
     field(DTYP, "asynInt32")
@@ -62,7 +62,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER3")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER4")
+record(longin, "$(DEVICE):PATT$(D)_MODIFIER4")
 {
     field(DESC, "PatternDiag $(D) modifier4")
     field(DTYP, "asynInt32")
@@ -70,7 +70,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER4")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER5")
+record(longin, "$(DEVICE):PATT$(D)_MODIFIER5")
 {
     field(DESC, "PatternDiag $(D) modifier5")
     field(DTYP, "asynInt32")
@@ -78,7 +78,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER5")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER6")
+record(longin, "$(DEVICE):PATT$(D)_MODIFIER6")
 {
     field(DESC, "PatternDiag $(D) modifier6")
     field(DTYP, "asynInt32")
@@ -86,7 +86,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_MODIFIER6")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_EDEFAVGDONE")
+record(longin, "$(DEVICE):PATT$(D)_EDEFAVGDONE")
 {
     field(DESC, "PatternDiag $(D) EDEF AVG Done")
     field(DTYP, "asynInt32")
@@ -94,7 +94,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_EDEFAVGDONE")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_EDEFMINOR")
+record(longin, "$(DEVICE):PATT$(D)_EDEFMINOR")
 {
     field(DESC, "PatternDiag $(D) EDEF Minor")
     field(DTYP, "asynInt32")
@@ -102,7 +102,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_EDEFMINOR")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_EDEFMAJOR")
+record(longin, "$(DEVICE):PATT$(D)_EDEFMAJOR")
 {
     field(DESC, "PatternDiag $(D) EDEF Major")
     field(DTYP, "asynInt32")
@@ -110,7 +110,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_EDEFMAJOR")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_EDEFINIT")
+record(longin, "$(DEVICE):PATT$(D)_EDEFINIT")
 {
     field(DESC, "PatternDiag $(D) EDEF Init")
     field(DTYP, "asynInt32")
@@ -118,7 +118,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_EDEFINIT")
     field(SCAN, "I/O Intr")
 }
 
-record(longin, "$(DEVICE):PATTERN$(D)_EDEFACTIVE")
+record(longin, "$(DEVICE):PATT$(D)_EDEFACTIVE")
 {
     field(DESC, "PatternDiag $(D) EDEF Active")
     field(DTYP, "asynInt32")
@@ -127,7 +127,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_EDEFACTIVE")
 }
 
 
-record(longin, "$(DEVICE):PATTERN$(D)_EDEFALLDONE")
+record(longin, "$(DEVICE):PATT$(D)_EDEFALLDONE")
 {
     field(DESC, "PatternDiag $(D) EDEF All Done")
     field(DTYP, "asynInt32")
@@ -136,7 +136,7 @@ record(longin, "$(DEVICE):PATTERN$(D)_EDEFALLDONE")
 }
 
 
-record(longin, "$(DEVICE):PATTERN$(D)_STATUS")
+record(longin, "$(DEVICE):PATT$(D)_STATUS")
 {
     field(DESC, "PatternDiag $(D) Status")
     field(DTYP, "asynInt32")
