@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 472
-y 44
+x 452
+y 112
 w 535
 h 512
 font "helvetica-bold-r-18.0"
@@ -88,7 +88,7 @@ x 100
 y 100
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_PULSEID"
+controlPv "$(DEVICE):PATTD3_PULSEID"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -115,7 +115,7 @@ x 100
 y 120
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_BEAMCODE"
+controlPv "$(DEVICE):PATTD3_BEAMCODE"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -161,7 +161,7 @@ x 100
 y 160
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_MODIFIER1"
+controlPv "$(DEVICE):PATTD3_MODIFIER1"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -187,7 +187,7 @@ x 100
 y 180
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_MODIFIER2"
+controlPv "$(DEVICE):PATTD3_MODIFIER2"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -213,7 +213,7 @@ x 100
 y 200
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_MODIFIER3"
+controlPv "$(DEVICE):PATTD3_MODIFIER3"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -239,7 +239,7 @@ x 100
 y 220
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_MODIFIER4"
+controlPv "$(DEVICE):PATTD3_MODIFIER4"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -265,7 +265,7 @@ x 100
 y 240
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_MODIFIER5"
+controlPv "$(DEVICE):PATTD3_MODIFIER5"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -291,7 +291,7 @@ x 210
 y 240
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_MODIFIER5"
+controlPv "$(DEVICE):PATTD2_MODIFIER5"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -316,7 +316,7 @@ x 210
 y 220
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_MODIFIER4"
+controlPv "$(DEVICE):PATTD2_MODIFIER4"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -343,7 +343,7 @@ x 210
 y 200
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_MODIFIER3"
+controlPv "$(DEVICE):PATTD2_MODIFIER3"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -370,7 +370,7 @@ x 210
 y 180
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_MODIFIER2"
+controlPv "$(DEVICE):PATTD2_MODIFIER2"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -397,7 +397,7 @@ x 210
 y 160
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_MODIFIER1"
+controlPv "$(DEVICE):PATTD2_MODIFIER1"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -423,7 +423,7 @@ x 210
 y 120
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_BEAMCODE"
+controlPv "$(DEVICE):PATTD2_BEAMCODE"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -448,7 +448,7 @@ x 210
 y 100
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_PULSEID"
+controlPv "$(DEVICE):PATTD2_PULSEID"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -475,7 +475,7 @@ x 320
 y 240
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_MODIFIER5"
+controlPv "$(DEVICE):PATTD1_MODIFIER5"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -501,7 +501,7 @@ x 320
 y 220
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_MODIFIER4"
+controlPv "$(DEVICE):PATTD1_MODIFIER4"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -527,7 +527,7 @@ x 320
 y 200
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_MODIFIER3"
+controlPv "$(DEVICE):PATTD1_MODIFIER3"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -553,7 +553,7 @@ x 320
 y 180
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_MODIFIER2"
+controlPv "$(DEVICE):PATTD1_MODIFIER2"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -579,7 +579,7 @@ x 320
 y 160
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_MODIFIER1"
+controlPv "$(DEVICE):PATTD1_MODIFIER1"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -605,7 +605,7 @@ x 320
 y 120
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_BEAMCODE"
+controlPv "$(DEVICE):PATTD1_BEAMCODE"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -631,7 +631,7 @@ x 320
 y 100
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_PULSEID"
+controlPv "$(DEVICE):PATTD1_PULSEID"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -658,7 +658,7 @@ x 430
 y 240
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_MODIFIER5"
+controlPv "$(DEVICE):PATTD_MODIFIER5"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -684,7 +684,7 @@ x 430
 y 220
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_MODIFIER4"
+controlPv "$(DEVICE):PATTD_MODIFIER4"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -710,7 +710,7 @@ x 430
 y 200
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_MODIFIER3"
+controlPv "$(DEVICE):PATTD_MODIFIER3"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -736,7 +736,7 @@ x 430
 y 180
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_MODIFIER2"
+controlPv "$(DEVICE):PATTD_MODIFIER2"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -762,7 +762,7 @@ x 430
 y 160
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_MODIFIER1"
+controlPv "$(DEVICE):PATTD_MODIFIER1"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -788,7 +788,7 @@ x 430
 y 120
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_BEAMCODE"
+controlPv "$(DEVICE):PATTD_BEAMCODE"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -814,7 +814,7 @@ x 430
 y 100
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_PULSEID"
+controlPv "$(DEVICE):PATTD_PULSEID"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -841,7 +841,7 @@ x 430
 y 260
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_MODIFIER6"
+controlPv "$(DEVICE):PATTD_MODIFIER6"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -867,7 +867,7 @@ x 320
 y 260
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_MODIFIER6"
+controlPv "$(DEVICE):PATTD1_MODIFIER6"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -893,7 +893,7 @@ x 210
 y 260
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_MODIFIER6"
+controlPv "$(DEVICE):PATTD2_MODIFIER6"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -920,7 +920,7 @@ x 100
 y 260
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_MODIFIER6"
+controlPv "$(DEVICE):PATTD3_MODIFIER6"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1189,7 +1189,7 @@ x 430
 y 280
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_EDEFAVGDONE"
+controlPv "$(DEVICE):PATTD_EDEFAVGDONE"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1215,7 +1215,7 @@ x 320
 y 280
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_EDEFAVGDONE"
+controlPv "$(DEVICE):PATTD1_EDEFAVGDONE"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1241,7 +1241,7 @@ x 210
 y 280
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_EDEFAVGDONE"
+controlPv "$(DEVICE):PATTD2_EDEFAVGDONE"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1267,7 +1267,7 @@ x 100
 y 280
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_EDEFAVGDONE"
+controlPv "$(DEVICE):PATTD3_EDEFAVGDONE"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1333,7 +1333,7 @@ x 100
 y 140
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_TIMESLOT"
+controlPv "$(DEVICE):PATTD3_TIMESLOT"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -1359,7 +1359,7 @@ x 210
 y 140
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_TIMESLOT"
+controlPv "$(DEVICE):PATTD2_TIMESLOT"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -1384,7 +1384,7 @@ x 320
 y 140
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_TIMESLOT"
+controlPv "$(DEVICE):PATTD1_TIMESLOT"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -1410,7 +1410,7 @@ x 430
 y 140
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_TIMESLOT"
+controlPv "$(DEVICE):PATTD_TIMESLOT"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
 fgColor index 14
@@ -1436,7 +1436,7 @@ x 210
 y 440
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_STATUS"
+controlPv "$(DEVICE):PATTD2_STATUS"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1463,7 +1463,7 @@ x 210
 y 420
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_NANOSECOND"
+controlPv "$(DEVICE):PATTD2_NANOSECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1490,7 +1490,7 @@ x 210
 y 400
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_SECOND"
+controlPv "$(DEVICE):PATTD2_SECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1517,7 +1517,7 @@ x 320
 y 440
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_STATUS"
+controlPv "$(DEVICE):PATTD1_STATUS"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1544,7 +1544,7 @@ x 320
 y 420
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_NANOSECOND"
+controlPv "$(DEVICE):PATTD1_NANOSECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1571,7 +1571,7 @@ x 320
 y 400
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_SECOND"
+controlPv "$(DEVICE):PATTD1_SECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1598,7 +1598,7 @@ x 105
 y 400
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_SECOND"
+controlPv "$(DEVICE):PATTD3_SECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1625,7 +1625,7 @@ x 105
 y 420
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_NANOSECOND"
+controlPv "$(DEVICE):PATTD3_NANOSECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1652,7 +1652,7 @@ x 105
 y 440
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_STATUS"
+controlPv "$(DEVICE):PATTD3_STATUS"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1679,7 +1679,7 @@ x 435
 y 400
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND_SECOND"
+controlPv "$(DEVICE):PATTD_SECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1706,7 +1706,7 @@ x 435
 y 420
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND_NANOSECOND"
+controlPv "$(DEVICE):PATTD_NANOSECOND"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1733,7 +1733,7 @@ x 435
 y 440
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND_STATUS"
+controlPv "$(DEVICE):PATTD_STATUS"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1780,7 +1780,7 @@ x 430
 y 300
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_EDEFINIT"
+controlPv "$(DEVICE):PATTD_EDEFINIT"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1806,7 +1806,7 @@ x 320
 y 300
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_EDEFINIT"
+controlPv "$(DEVICE):PATTD1_EDEFINIT"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1832,7 +1832,7 @@ x 210
 y 300
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_EDEFINIT"
+controlPv "$(DEVICE):PATTD2_EDEFINIT"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -1858,7 +1858,7 @@ x 100
 y 300
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_EDEFINIT"
+controlPv "$(DEVICE):PATTD3_EDEFINIT"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2145,7 +2145,7 @@ x 430
 y 320
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_EDEFMINOR"
+controlPv "$(DEVICE):PATTD_EDEFMINOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2171,7 +2171,7 @@ x 320
 y 320
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_EDEFMINOR"
+controlPv "$(DEVICE):PATTD1_EDEFMINOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2197,7 +2197,7 @@ x 210
 y 320
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_EDEFMINOR"
+controlPv "$(DEVICE):PATTD2_EDEFMINOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2223,7 +2223,7 @@ x 100
 y 320
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_EDEFMINOR"
+controlPv "$(DEVICE):PATTD3_EDEFMINOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2249,7 +2249,7 @@ x 430
 y 340
 w 95
 h 16
-controlPv "$(DEVICE):PATTERND_EDEFMAJOR"
+controlPv "$(DEVICE):PATTD_EDEFMAJOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2275,7 +2275,7 @@ x 320
 y 340
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-1_EDEFMAJOR"
+controlPv "$(DEVICE):PATTD1_EDEFMAJOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2301,7 +2301,7 @@ x 210
 y 340
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-2_EDEFMAJOR"
+controlPv "$(DEVICE):PATTD2_EDEFMAJOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
@@ -2327,7 +2327,7 @@ x 100
 y 340
 w 90
 h 16
-controlPv "$(DEVICE):PATTERND-3_EDEFMAJOR"
+controlPv "$(DEVICE):PATTD3_EDEFMAJOR"
 format "hex"
 font "helvetica-bold-r-14.0"
 fontAlign "center"
