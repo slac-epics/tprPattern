@@ -1,4 +1,4 @@
-record(longout, "$(DEVICE):SOFTEVSEL$(NN)_EVENTCODE")
+record(longout, "TPR:$(LOCA):$(IOC_UNIT):$(INST):SOFTEVSEL$(NN)_EVCODE")
 {
     field(DESC, "Soft Event Select $(N) Event Code")
     field(DTYP, "asynInt32")
@@ -6,7 +6,7 @@ record(longout, "$(DEVICE):SOFTEVSEL$(NN)_EVENTCODE")
     field(SCAN, "Passive") 
 }
 
-record(bo, "$(DEVICE):SOFTEVSEL$(NN)_ENABLE")
+record(bo, "TPR:$(LOCA):$(IOC_UNIT):$(INST):SOFTEVSEL$(NN)_ENABLE")
 {
     field(DESC, "Soft Event Select $(N) Enable")
     field(DTYP, "asynInt32")
@@ -16,7 +16,7 @@ record(bo, "$(DEVICE):SOFTEVSEL$(NN)_ENABLE")
     field(ONAM, "Enabled")
 }
 
-record(ai, "$(DEVICE):SOFTEVSEL$(NN)_RATE")
+record(ai, "TPR:$(LOCA):$(IOC_UNIT):$(INST):SOFTEVSEL$(NN)_RATE")
 {
     field(DESC, "Soft Event Select $(N) Rate in Pattern")
     field(DTYP, "asynFloat64")
@@ -26,7 +26,7 @@ record(ai, "$(DEVICE):SOFTEVSEL$(NN)_RATE")
     field(EGU,  "Counts/Sec")
 }
 
-record(ai, "$(DEVICE):SOFTEVSEL$(NN)_EVRATE")
+record(ai, "TPR:$(LOCA):$(IOC_UNIT):$(INST):SOFTEVSEL$(NN)_EVRATE")
 {
     field(DESC, "Soft Event Select $(N) Event Rate")
     field(DTYP, "asynFloat64")
