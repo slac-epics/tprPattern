@@ -38,13 +38,13 @@ TPRPATTERN=$(EPICS_MODULES)/tprPattern/$(TPRPATTERN_MODULE_VERSION)
 the tprTrigger module assumes the following API and modules are included in the application.
 
 asyn            R4.31-0.1.0
-yamlLoader      R1.1.0
+yamlLoader      R1.1.1
 timingApi       R0.6
 
 cpsw/framework  R3.6.4
 yaml-cpp        yaml-cpp-0.5.3
 boost           1.63.0
-hpsTpr          R1.0.0
+hpsTpr          R1.0.2
 
 
 
