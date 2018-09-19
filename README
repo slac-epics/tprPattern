@@ -74,13 +74,19 @@ How to run ioc with tprPattern
 -------------------------------
 
 1. How to load database template for tprPattern
-the template has two macros: DEV and PORT.
-DEV - prefix for PV name (ex, TPR:SYS2:0)
-PORT - port name for asyn port driver, tprPattern module has port name "pattern".
 
-Here is an example to load up the template.
-epicsEnvSet("IOC_PV", "TPR:SYS2:0")
-dbLoadRecords("db/tprPattern.db", "DEV=${IOC_PV}, PORT=pattern")
+Macros for tprPattern.db
+
+PORT      - port name for asyn port driver, tprPattern moudle has port name "pattern".
+LOCA      - location (ex, LI24, IN20)
+IOC_UNIT  - IOC name (ex, RF01, RF02)
+INST      - instance number for mutiple TPR in an ioc
+
+
+example)
+dbLoadRecords("db/tprPattern.db", "LOCA=LI24,IOC_UNIT=RF02,INST=0,PORT=pattern")
+
+it will make tprPattern PVs which have prefix "TPR:LI24:RF02:0:".
 
 
 2. How to initialize the driver
