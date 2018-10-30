@@ -436,6 +436,21 @@ int evrTimeGet            (epicsTimeStamp  *epicsTime_ps,
 }
 
 
+int evrTimePutPulseID (epicsTimeStamp  *epicsTime_ps, unsigned int pulseID)
+{
+  epicsTime_ps->nsec &= UPPER_15_BIT_MASK;
+  epicsTime_ps->nsec |= pulseID;
+  if (epicsTime_ps->nsec >= NSEC_PER_SEC) {
+    epicsTime_ps->secPastEpoch++;
+    epicsTime_ps->nsec -= NSEC_PER_SEC;
+    epicsTime_ps->nsec &= UPPER_15_BIT_MASK;
+    epicsTime_ps->nsec |= pulseID;
+  }
+  return 0;
+}
+
+
+
 
 
 //

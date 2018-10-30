@@ -49,6 +49,8 @@ int evrTimeGetFromEdef    (unsigned int     edefIdx,
 int evrTimeGet            (epicsTimeStamp  *epicsTime_ps,
                            unsigned int     eventCode);
 
+int evrTimePutPulseID     (epicsTimeStamp  *epicsTime_ps,
+                           unsigned int    pulseID);
 
 
 #ifdef __cplusplus
