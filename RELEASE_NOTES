@@ -2,6 +2,7 @@ R1.1.1    Sep 18, 2018      Kukhee Kim (KHKIM)
           * build with yamlLoader     R1.1.1
           * build with hpsTpr         R1.0.2
           * build with cpsw/framework R3.6.6
+          * add evrTimePutPulseID in evrTime.h and its implementation
 
 R1.1.0    July 3, 2018      Kukhee Kim (KHKIM)
           * PV name change to reflect LCLS-II naming convention
