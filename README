@@ -113,3 +113,27 @@ If firmware doesn't receive the packet, firmware stops to send stream, clean up 
 and wait request from another destination.
 Thus, we need to pu "pollSec: 1" for the stream definiation in the yaml file.
 
+
+4. Multiple Blades configuration and named_root
+
+Multiple balde system have multiple root. We can identify the root via named_root.
+The yamlLoader driver configuration command has an aadditional (optional argument) to specify the named_root.
+
+tprPattern driver can choose a particular root path with describing the named_root (very last argument in the driver configuration command).
+ex)
+        cd  ${YAML_DIR0}
+        cpswLoadYamlFile("000TopLevel.yaml", "NetIODev", "", "10.0.3.102", "root_slot2")
+        cd  ${YAML_DIR1}
+        cpswLoadYamlFile("000TopLevel.yaml", "NetIODev", "", "10.0.3.103", "root_slot3")
+        cd  ${YAML_DIR2}
+        cpswLoadYamlFile("000TopLevel.yaml", "NetIODev", "", "10.0.3.104", "root_slot4")
+
+	tprPatternAsynDriverConfigure("pattern", "mmio/AmcCarrierEmpty/AmcCarrierCore", "tstream", "root_slot2")
+
+Note) The tprPattern driver only allow a single instance in a system even the system has multiple blades. 
+It is similar with multiple EVR in VME system, trigger functions allows to use all for EVRs in the system, 
+but timing pattern is only work with a first EVR card.
+We can use multiple tprPattern driver instaces but, we can use a single tprPattern driver instace.
+
+
+

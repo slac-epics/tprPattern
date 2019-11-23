@@ -43,7 +43,7 @@ static const char          *driverName = "tpgPatternAsynDriver";
 static tprPatternAsynDriver *p_asynDrv = NULL;
 
 
-tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *corePath, const char *streamPath)
+tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *corePath, const char *streamPath, const char *named_root)
     : asynPortDriver(portName,
                      1,
                      NUM_TPR_PTRN_DET_PARAMS,
@@ -55,15 +55,17 @@ tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *cor
                      0)
 {
 
-
-    Path _core   = cpswGetRoot()->findByName(corePath);
-    Path _stream = cpswGetRoot()->findByName(streamPath);
+    if(named_root && !strlen(named_root)) named_root = NULL;
+    
+    Path _core   = ((!named_root)?cpswGetRoot():cpswGetNamedRoot(named_root))->findByName(corePath);
+    Path _stream = ((!named_root)?cpswGetRoot():cpswGetNamedRoot(named_root))->findByName(streamPath);
     p_drv        = new Tpr::TprPatternYaml(_core, _stream);
     p_patternBuffer = new TprEvent::PatternBuffer;
     
-    strcpy(port_name, portName);
-    strcpy(core_path, corePath);
-    strcpy(stream_path, streamPath);
+    strcpy(this->named_root, (named_root)?named_root:cpswGetRootName()); 
+    strcpy(this->port_name, portName);
+    strcpy(this->core_path, corePath);
+    strcpy(this->stream_path, streamPath);
     
     CreateParameters();
 }
@@ -72,7 +74,7 @@ tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *cor
 
 int tprPatternAsynDriver::Report(int interest_level)
 {
-
+    printf("\tnamed_root:      %s\n", named_root);
     printf("\tport name:       %s\n", port_name);
     printf("\tcore path:       %s\n", core_path);
     printf("\tstream path:     %s\n", stream_path);
@@ -93,7 +95,7 @@ int tprPatternAsynDriver::tprPatternTask(void)
     printf("tprPatternAsynDriver: launch tprPatternTask (%ld)\n", TPR_STREAM_SIZE);
     Tpr::TprStream *buf_current, *buf2_advanced;
     
-    p_drv->TrainingStream();
+    // p_drv->TrainingStream();
     
     while(1) {
         p_patternBuffer->Lock();   /* global locking for pattern stream evolution */
@@ -488,14 +490,14 @@ static int tprPatternEventTimeGetSystem_gtWrapper(epicsTimeStamp *time, int even
     return p_asynDrv->tprPatternEventTimeGetSystem_gtWrapper(time, eventCode);
 }
 
-static void tprPatternAsynDriverConfigure(const char *port_name, const char *core_path, const char *stream_path)
+static void tprPatternAsynDriverConfigure(const char *port_name, const char *core_path, const char *stream_path, const char *named_root)
 {
     if(p_asynDrv) {
         printf("The tprPatternAsynDriver has been initialized already (%p)\n", p_asynDrv);
         return;
     }
     
-    p_asynDrv = new tprPatternAsynDriver(port_name, core_path, stream_path);
+    p_asynDrv = new tprPatternAsynDriver(port_name, core_path, stream_path, named_root);
 }
 
 static int tprPatternAsynDriverReport(int interest);
@@ -546,13 +548,16 @@ static int tprPatternAsynDriverInitialize(void)
 static const iocshArg initArg0 = { "port name",    iocshArgString };
 static const iocshArg initArg1 = { "core path",    iocshArgString };
 static const iocshArg initArg2 = { "sstream path", iocshArgString };
+static const iocshArg initArg3 = { "named_root (optional)", iocshArgString };
 static const iocshArg * const initArgs[] = { &initArg0, 
                                              &initArg1,
-                                             &initArg2 };
-static const iocshFuncDef initFuncDef = { "tprPatternAsynDriverConfigure", 3, initArgs };
+                                             &initArg2,
+                                             &initArg3 };
+static const iocshFuncDef initFuncDef = { "tprPatternAsynDriverConfigure", 4, initArgs };
 static void  initCallFunc(const iocshArgBuf *args)
 {
-    tprPatternAsynDriverConfigure(args[0].sval, args[1].sval, args[2].sval);
+    tprPatternAsynDriverConfigure(args[0].sval, args[1].sval, args[2].sval,
+                                 (args[3].sval && strlen(args[3].sval))?args[3].sval:NULL );
 }
 
 

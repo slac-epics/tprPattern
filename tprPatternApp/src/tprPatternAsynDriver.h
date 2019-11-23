@@ -43,7 +43,7 @@ typedef struct {
 
 class tprPatternAsynDriver:asynPortDriver {
     public:
-        tprPatternAsynDriver(const char *portName, const char *corePath, const char *streamPath);
+        tprPatternAsynDriver(const char *portName, const char *corePath, const char *streamPath, const char *named_root = NULL);
         int Report(int interest_level);
         int tprPatternTask(void);
         
@@ -61,6 +61,7 @@ class tprPatternAsynDriver:asynPortDriver {
         
         
     private:
+        char named_root[128];
         char port_name[128];
         char core_path[128];
         char stream_path[128];
