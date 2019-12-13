@@ -77,8 +77,10 @@ class tprPatternAsynDriver:asynPortDriver {
     //
     // parameter section for asynPortDriver
     //
+#if (ASYN_VERSION <<8 | ASYN_REVISION) < (4<<8 | 32)
         int  firstTprPtrnParam;
         #define FIRST_TPR_PTRN_PARAM       firstTprPtrnParam
+#endif /* check asyn version, under 4.32 */
         
         int p_activeTS1;
         int p_activeTS2;
@@ -112,14 +114,17 @@ class tprPatternAsynDriver:asynPortDriver {
             int     edef_all_done;
             int     status;
         } p_patternDiag[4];
-        
+
+#if (ASYN_VERSION <<8 | ASYN_REVISION) < (4<<8 | 32)        
         int  lastTprPtrnParam;
         #define LAST_TPR_PTRN_PARAM        lastTprPtrnParam
+#endif /* check asyn version, under 4.32 */
         
 };
 
-
+#if (ASYN_VERSION <<8 | ASYN_REVISION) < (4<<8 | 32)
 #define NUM_TPR_PTRN_DET_PARAMS    ((int)(&LAST_TPR_PTRN_PARAM-&FIRST_TPR_PTRN_PARAM -1))
+#endif /* check asyn version, under 4.32 */
 
 #define activeTS1String                    "activeTS1"
 #define activeTS2String                    "activeTS2"

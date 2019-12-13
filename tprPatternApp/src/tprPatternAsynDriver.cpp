@@ -46,7 +46,9 @@ static tprPatternAsynDriver *p_asynDrv = NULL;
 tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *corePath, const char *streamPath, const char *named_root)
     : asynPortDriver(portName,
                      1,
+#if (ASYN_VERSION <<8 | ASYN_REVISION) < (4<<8 | 32)
                      NUM_TPR_PTRN_DET_PARAMS,
+#endif /* check asyn version, under 4.32 */
                      asynInt32Mask | asynFloat64Mask | asynOctetMask | asynDrvUserMask | asynInt32ArrayMask | asynInt16ArrayMask,
                      asynInt32Mask | asynFloat64Mask | asynOctetMask | asynEnumMask    | asynInt32ArrayMask | asynInt16ArrayMask,
                      1,
