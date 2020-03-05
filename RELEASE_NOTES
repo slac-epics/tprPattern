@@ -1,3 +1,7 @@
+R1.3.0    Mar 4, 2020       Kukhee Kim (khkim)
+          * force tag R1.3.0
+          * upgrade new modifier bits for CLTS
+
 R1.3.0    Jan 29, 2019      Kukhee Kim (khkim)
           * build with yamlLoader R2.1.0, cpsw/framework R4.4.1, hpsTpr R1.1.0 and buildroot-2019.08
 
