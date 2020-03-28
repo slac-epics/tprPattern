@@ -1,3 +1,6 @@
+R1.4.0    Mar 28, 2020      Kukhee Kim (khkim)
+          * implement a graceful shutdown to avoid core dump during exit process
+
 R1.3.0    Mar 4, 2020       Kukhee Kim (khkim)
           * force tag R1.3.0
           * upgrade new modifier bits for CLTS

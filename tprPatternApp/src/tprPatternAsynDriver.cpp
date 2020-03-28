@@ -25,6 +25,7 @@
 
 #include <drvSup.h>
 #include <epicsExport.h>
+#include <epicsExit.h>
 
 #include <asynPortDriver.h>
 #include <asynOctetSyncIO.h>
@@ -63,6 +64,8 @@ tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *cor
     Path _stream = ((!named_root)?cpswGetRoot():cpswGetNamedRoot(named_root))->findByName(streamPath);
     p_drv        = new Tpr::TprPatternYaml(_core, _stream);
     p_patternBuffer = new TprEvent::PatternBuffer;
+
+    stopPatternTask = false;
     
     strcpy(this->named_root, (named_root)?named_root:cpswGetRootName()); 
     strcpy(this->port_name, portName);
@@ -98,8 +101,10 @@ int tprPatternAsynDriver::tprPatternTask(void)
     Tpr::TprStream *buf_current, *buf2_advanced;
     
     // p_drv->TrainingStream();
+
+    patternTaskId = epicsThreadGetIdSelf();
     
-    while(1) {
+    while(!stopPatternTask) {
         p_patternBuffer->Lock();   /* global locking for pattern stream evolution */
         
             p_drv->Read(p_patternBuffer->GetNextBuf(), TPR_STREAM_SIZE);
@@ -125,6 +130,14 @@ int tprPatternAsynDriver::tprPatternTask(void)
     
     }
     
+    return 0;
+}
+
+int tprPatternAsynDriver::tprPatternTaskStop(void)
+{
+    stopPatternTask = true;
+    epicsThreadMustJoin(patternTaskId);
+
     return 0;
 }
 
@@ -477,6 +490,15 @@ static int tprPatternTask(void)
     return 0;
 }
 
+static int tprPatternTaskStop(void)
+{
+    if(!p_asynDrv) return -1;
+
+    p_asynDrv->tprPatternTaskStop();
+
+    return 0;
+}
+
 
 static int tprPatternEventTimeGet_gtWrapper(epicsTimeStamp *time, int eventCode)
 {
@@ -531,10 +553,19 @@ static int tprPatternAsynDriverInitialize(void)
 
 
     if(!p_asynDrv) return 0;
-    
+    /*
     epicsThreadCreate("tprPatternTask", epicsThreadPriorityHigh + 5,
                       epicsThreadGetStackSize(epicsThreadStackMedium),
                       (EPICSTHREADFUNC) tprPatternTask ,0);
+    */
+
+    epicsThreadOpts opts = EPICS_THREAD_OPTS_INIT;
+    opts.priority = epicsThreadPriorityHigh + 5;
+    opts.stackSize = epicsThreadGetStackSize(epicsThreadStackMedium);
+    opts.joinable = 1;
+
+    epicsThreadCreateOpt("tprPatternTask", (EPICSTHREADFUNC) tprPatternTask, 0, &opts);
+    epicsAtExit3((epicsExitFunc) tprPatternTaskStop, (void*) NULL, "tprPatternTaskStop");
     
     generalTimeRegisterEventProvider("patternTimeGet",       1000, (TIMEEVENTFUN) tprPatternEventTimeGet_gtWrapper);
     generalTimeRegisterEventProvider("patternTimeGetSystem", 2000, (TIMEEVENTFUN) tprPatternEventTimeGetSystem_gtWrapper);  
