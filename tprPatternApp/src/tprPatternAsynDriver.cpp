@@ -495,6 +495,7 @@ static int tprPatternTaskStop(void)
     if(!p_asynDrv) return -1;
 
     p_asynDrv->tprPatternTaskStop();
+    printf("tprPatternTask: stop\n");
 
     return 0;
 }
