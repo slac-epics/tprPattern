@@ -8,6 +8,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#include <epicsVersion.h>
+
 #include <ellLib.h>
 #include <epicsTypes.h>
 #include <epicsTime.h>
@@ -136,8 +138,14 @@ int tprPatternAsynDriver::tprPatternTask(void)
 int tprPatternAsynDriver::tprPatternTaskStop(void)
 {
     stopPatternTask = true;
-    epicsThreadMustJoin(patternTaskId);
 
+#if EPICS_VERSION_INT < VERSION_INT(7, 0, 3, 1)   /* epics version check for backward compatibility */
+/* before epics R7.0.3.1,   no thread join implemented */
+    epicsThreadSleep(3.);   /* wait 3 second to give time forreturning the thread */
+#else
+/* after epics R7.0.3.1,    join the thread */
+    epicsThreadMustJoin(patternTaskId);
+#endif
     return 0;
 }
 
@@ -554,11 +562,16 @@ static int tprPatternAsynDriverInitialize(void)
 
 
     if(!p_asynDrv) return 0;
-    /*
+
+#if EPICS_VERSION_INT < VERSION_INT(7, 0, 3, 1)    /* epics version check for backward compatibility */
+/* before epics R7.0.3.1,   use un-joinable thread */
+
     epicsThreadCreate("tprPatternTask", epicsThreadPriorityHigh + 5,
                       epicsThreadGetStackSize(epicsThreadStackMedium),
                       (EPICSTHREADFUNC) tprPatternTask ,0);
-    */
+
+#else   
+/* epics R7.0.3.1 or later,    use joinable thread */
 
     epicsThreadOpts opts = EPICS_THREAD_OPTS_INIT;
     opts.priority = epicsThreadPriorityHigh + 5;
@@ -566,6 +579,9 @@ static int tprPatternAsynDriverInitialize(void)
     opts.joinable = 1;
 
     epicsThreadCreateOpt("tprPatternTask", (EPICSTHREADFUNC) tprPatternTask, 0, &opts);
+
+#endif
+
     epicsAtExit3((epicsExitFunc) tprPatternTaskStop, (void*) NULL, "tprPatternTaskStop");
     
     generalTimeRegisterEventProvider("patternTimeGet",       1000, (TIMEEVENTFUN) tprPatternEventTimeGet_gtWrapper);

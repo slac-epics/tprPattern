@@ -1,3 +1,9 @@
+R1.4.0    Mar 30, 2020      Kukhee Kim (khkim)
+          - forace tag
+          - backward compatibility issue for the graceful shutdown
+            epics 3.15 doesn't support joinable thread and new API epicsThreadCreateOpt
+            put an workaround for the old epics base
+
 R1.4.0    Mar 28, 2020      Kukhee Kim (khkim)
           * implement a graceful shutdown to avoid core dump during exit process
 
