@@ -68,6 +68,9 @@ tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *cor
     p_patternBuffer = new TprEvent::PatternBuffer;
 
     stopPatternTask = false;
+#if EPICS_VERSION_INT < VERSION_INT(7, 0, 3, 1)
+    shutdownEvent = epicsEventMustCreate(epicsEventEmpty);
+#endif
     
     strcpy(this->named_root, (named_root)?named_root:cpswGetRootName()); 
     strcpy(this->port_name, portName);
@@ -131,6 +134,10 @@ int tprPatternAsynDriver::tprPatternTask(void)
         TprDiagnostics();
     
     }
+
+#if EPICS_VERSION_INT < VERSION_INT(7, 0, 3, 1)
+    epicsEventSignal(shutdownEvent);
+#endif
     
     return 0;
 }
@@ -141,7 +148,7 @@ int tprPatternAsynDriver::tprPatternTaskStop(void)
 
 #if EPICS_VERSION_INT < VERSION_INT(7, 0, 3, 1)   /* epics version check for backward compatibility */
 /* before epics R7.0.3.1,   no thread join implemented */
-    epicsThreadSleep(3.);   /* wait 3 second to give time forreturning the thread */
+    epicsEventWait(shutdownEvent);
 #else
 /* after epics R7.0.3.1,    join the thread */
     epicsThreadMustJoin(patternTaskId);

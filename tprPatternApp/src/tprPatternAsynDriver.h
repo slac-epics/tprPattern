@@ -1,6 +1,8 @@
 #ifndef TPR_PATTERN_ASYN_DRIVER_H
 #define TPR_PATTERN_ASYN_DRIVER_H
 
+#include <epicsThread.h>
+#include <epicsEvent.h>
 #include <epicsTypes.h>
 #include <epicsTime.h>
 #include <sys/time.h>
@@ -68,6 +70,10 @@ class tprPatternAsynDriver:asynPortDriver {
         char stream_path[128];
 
         epicsThreadId  patternTaskId;
+
+#if EPICS_VERSION_INT < VERSION_INT(7, 0, 3, 1)
+        epicsEventId   shutdownEvent;
+#endif
         bool stopPatternTask;
         
         Tpr::TprPatternYaml *p_drv;
