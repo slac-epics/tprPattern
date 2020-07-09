@@ -1,4 +1,4 @@
-
+#include <exception>
 #include <epicsTime.h>
 
 #include <tprEvent.hh>
@@ -85,6 +85,7 @@ typedef struct {
     ELLNODE node;
     BsaTimingCallback bsa_cb;
     void *            p_bsa_usrPvt;
+    unsigned          exception_cnt;
 } bsaCallbackFunc_ts;
 
 
@@ -106,6 +107,7 @@ int BsaCallback::Register(BsaTimingCallback callback, void *pUserPvt)
     
     pBsaCallback->bsa_cb = callback;
     pBsaCallback->p_bsa_usrPvt = pUserPvt;
+    pBsaCallback->exception_cnt = 0;
     
     plock->lock();
     ellAdd(plist, &pBsaCallback->node);
@@ -122,7 +124,14 @@ int BsaCallback::CallFunctions(const BsaTimingData *bsa_data)
     plock->lock();
     p = (bsaCallbackFunc_ts *) ellFirst(plist);
     while(p) {
-        (*(p->bsa_cb))(p->p_bsa_usrPvt, bsa_data);
+        try {
+            (*(p->bsa_cb))(p->p_bsa_usrPvt, bsa_data);
+        } catch (std::exception &e) {
+            /* nothing to do for the pattern buffer overrun,
+               just ignore and skip current timing pattern 
+               to avoid application crash */
+            (p->exception_cnt)++;
+        }
         p = (bsaCallbackFunc_ts *) ellNext(&p->node);
     }
     plock->unlock();
@@ -139,6 +148,7 @@ int BsaCallback::Report(void)
     p = (bsaCallbackFunc_ts *) ellFirst(plist);
     while(p) {
         printf("Registered bsa function %p, argument %p\n", p->bsa_cb, p->p_bsa_usrPvt);
+        printf("Exception Counter for PatternBuffer %lu\n", p->exception_cnt);
         p = (bsaCallbackFunc_ts *) ellNext(&p->node);
     }
     // plock->unlock(); /* we may not need locking for report function */

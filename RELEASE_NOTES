@@ -1,3 +1,7 @@
+R1.4.1    July 8, 2020      Kukhee Kim (khkim)
+          - add exception handling for PatternBuffer overrun to avoid ioc crash
+
+
 R1.4.0    Mar 31, 2020      Kukhee Kim (khkim)
           - forace tag
           - improve workaround for the missing thread join in old epics base: using epics event signal
