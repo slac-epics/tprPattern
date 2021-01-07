@@ -1,3 +1,8 @@
+ued_support     Jan 7, 2020     Kukhee Kim (khkim)
+          - branch out from R1.4.1 to test and support UED 1kHz operation
+          - build with timing/hpsTpr ued_support branch for testing
+
+
 R1.4.1    July 8, 2020      Kukhee Kim (khkim)
           - add exception handling for PatternBuffer overrun to avoid ioc crash
 
