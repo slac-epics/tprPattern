@@ -1,3 +1,6 @@
+ued_support     Mar 1, 2021     Kukhee Kim (khkim)
+          - build with timing/hpsTpr R1.2.0
+
 ued_support     Jan 7, 2020     Kukhee Kim (khkim)
           - branch out from R1.4.1 to test and support UED 1kHz operation
           - build with timing/hpsTpr ued_support branch for testing
