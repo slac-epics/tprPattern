@@ -64,6 +64,7 @@ class tprPatternAsynDriver:asynPortDriver {
         
         
     private:
+        enum {_atca, _pcie} busType;
         char named_root[128];
         char port_name[128];
         char core_path[128];

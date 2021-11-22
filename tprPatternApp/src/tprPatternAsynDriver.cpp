@@ -59,12 +59,28 @@ tprPatternAsynDriver::tprPatternAsynDriver(const char *portName, const char *cor
                      0,
                      0)
 {
+    Path _core, _stream;
+    busType = _atca;
 
     if(named_root && !strlen(named_root)) named_root = NULL;
-    
-    Path _core   = ((!named_root)?cpswGetRoot():cpswGetNamedRoot(named_root))->findByName(corePath);
-    Path _stream = ((!named_root)?cpswGetRoot():cpswGetNamedRoot(named_root))->findByName(streamPath);
-    p_drv        = new Tpr::TprPatternYaml(_core, _stream);
+    if(corePath && strlen(corePath)) {
+        if(!strncmp(corePath, "PCIe:/", 6)  || !strncmp(corePath, "pcie:/", 6)) busType = _pcie;
+        else                                                                    busType = _atca;
+    } else {
+        busType = _atca; // default bus
+    }
+
+    switch(busType) {
+        case _atca:
+            _core   = ((!named_root)?cpswGetRoot():cpswGetNamedRoot(named_root))->findByName(corePath);
+            _stream = ((!named_root)?cpswGetRoot():cpswGetNamedRoot(named_root))->findByName(streamPath);
+            p_drv   = new Tpr::TprPatternYaml(_core, _stream);
+            break;
+        case _pcie:
+            break;
+    }
+
+
     p_patternBuffer = new TprEvent::PatternBuffer;
 
     stopPatternTask = false;
