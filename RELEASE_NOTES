@@ -1,3 +1,6 @@
+R1.4.0-1.0 May 12, 2022      Michael Skoufis (skoufis)
+          - Update CONFIG_SITE and add support for RHEL7
+
 R1.4.0    Mar 31, 2020      Kukhee Kim (khkim)
           - forace tag
           - improve workaround for the missing thread join in old epics base: using epics event signal
