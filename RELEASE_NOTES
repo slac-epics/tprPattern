@@ -1,3 +1,9 @@
+R2.3.4	2022-10-13 Bruce Hill
+		Build w/ yamlLoader/R2.3.2 for both PCDS and LCLS
+
+R2.3.3	2022-10-13 Bruce Hill
+		PCDS build changes
+
 R2.3.2     Nov 21, 2021 Kukhee Kim (khkim)
            - upgrade to asyn R4.39-1.0.1
 
