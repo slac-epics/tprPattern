@@ -1,3 +1,6 @@
+R2.3.5	2023-01-04 Bruce Hill
+	Update to yamlLoader/R2.3.3 to fix build issue for rhel6-x86_64 target in R2.3.2
+
 R2.3.4	2022-10-13 Bruce Hill
 		Build w/ yamlLoader/R2.3.2 for both PCDS and LCLS
 
