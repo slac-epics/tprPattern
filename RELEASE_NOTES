@@ -1,3 +1,6 @@
+R2.3.6     Aug 04, 2023 Marcio Donadio (marcio)
+           - Built with yamlLoader/R2.3.5. 
+
 R2.3.5	2023-01-04 Bruce Hill
 	Update to yamlLoader/R2.3.3 to fix build issue for rhel6-x86_64 target in R2.3.2
 
