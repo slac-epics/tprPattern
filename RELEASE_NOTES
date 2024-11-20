@@ -1,3 +1,6 @@
+R2.3.8     Nov 19, 2024 Marcio Donadio (marcio)
+           - Upgraded modules: asyn/R4.39-1.0.2 yamlLoader/R2.3.7 hpsTpr/R2.5.1
+
 R2.3.7     Nov 15, 2023  Kukhee Kim (khkim)
            - build against timing/hpsTpr R2.5.0
                            timingApi     R0.9
